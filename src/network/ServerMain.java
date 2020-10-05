@@ -23,15 +23,6 @@ import java.util.List;
 public class ServerMain {
 
     public static void main(String[] args) {
-        Path file = Paths.get("query.sql");
-        if(Files.exists(file))
-            try {
-                String sqlQuery = new String(Files.readAllBytes(file), StandardCharsets.UTF_8);
-
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
 
         InetSocketAddress address = null;
         ServerSocket socket = null;
